@@ -98,11 +98,16 @@ h1, h2, h3, h4, h5, h6 {
       font: 1.5rem "Lora";
       weight: 500; }
     .content .section .article .article__date {
-      font: 0.8rem "Lora";
+      font: 0.9rem "Lora";
       color: #f1f1f1;
       background: #232323;
       display: inline-block;
-      padding: 4px; }
+      padding: 8px; }
     .content .section .article .article__content {
-      font: 1rem "Lora";
+      font: 1.1rem "Lora";
       margin-top: 8px; }
+      .content .section .article .article__content .article__content_text {
+        margin: 16px 0px; }
+      .content .section .article .article__content .article__content_censor {
+        color: #ea3111;
+        display: inline; }
