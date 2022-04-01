@@ -111,3 +111,21 @@ h1, h2, h3, h4, h5, h6 {
       .content .section .article .article__content .article__content_censor {
         color: #ea3111;
         display: inline; }
+
+@media screen and (max-width: 1030px) {
+  .page {
+    width: 100%; }
+  .header__item {
+    display: block;
+    width: 100%; }
+  .header .header__item_nav {
+    padding-right: 0px;
+    width: 100%;
+    text-align: center; }
+  .header .header__item_heading {
+    padding-left: 0px;
+    font: 2rem "Lora";
+    font-weight: normal;
+    font-weight: 500;
+    width: 100%;
+    text-align: center; } }
