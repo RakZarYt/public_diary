@@ -1,0 +1,27 @@
+.box-keep {
+  font-size: 0; }
+
+.box-item {
+  display: inline-block;
+  padding: 8px;
+  font-size: 1rem; }
+
+.box-title {
+  background: #333353;
+  color: #f1f1f1;
+  width: 40%; }
+
+.box-start {
+  background: #662211;
+  color: #f1f1f1;
+  width: 20%; }
+
+.box-finish {
+  background: #113353;
+  color: #f1f1f1;
+  width: 20%; }
+
+.box-time {
+  background: #887722;
+  color: #f1f1f1;
+  width: 20%; }

@@ -61,7 +61,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /*--------------------------*/
 .body {
-  font: 1rem "Lora"; }
+  font: 1rem "Lora";
+  background-image: url(../img/back.png); }
 
 .page {
   background: #f1f1f1;
@@ -156,6 +157,19 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 500;
     width: 100%;
     text-align: center; }
+  .article__heading {
+    font: 1rem "Lora";
+    weight: 500;
+    text-align: center;
+    margin-top: 36px; }
+    .article__heading:first-child {
+      margin-top: 0px; }
+  .article__date {
+    width: 94%;
+    text-align: center;
+    margin-left: 2%; }
+  .content .section .article .article__content .article__content_text {
+    margin: 2%; }
   .footer .footer__nav__item:first-child {
     margin-left: 8px; }
   .footer .footer__item_heading {
