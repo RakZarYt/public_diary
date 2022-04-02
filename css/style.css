@@ -1,4 +1,4 @@
-﻿@charset "UTF-8";
+@charset "UTF-8";
 /*Обнуление*/
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
 * {
@@ -90,6 +90,12 @@ h1, h2, h3, h4, h5, h6 {
     display: inline-block;
     margin: 16px; }
 
+.nav .nav__item {
+  color: #f1f1f1;
+  display: inline-block; }
+  .nav .nav__item:hover {
+    color: #fa2244; }
+
 .content {
   padding: 16px; }
   .content .section .article {
@@ -112,6 +118,27 @@ h1, h2, h3, h4, h5, h6 {
         color: #ea3111;
         display: inline; }
 
+.footer {
+  background: #232323;
+  padding: 8px; }
+  .footer .footer__item {
+    display: inline-block;
+    color: #f1f1f1; }
+  .footer .footer__item_heading {
+    padding-left: 8px;
+    font: 1.3rem "Lora";
+    font-weight: 500;
+    width: 20%; }
+  .footer .footer__item_nav {
+    padding-right: 16px;
+    width: 79.6%;
+    text-align: right; }
+  .footer .footer__nav {
+    display: inline-block; }
+  .footer .footer__nav__item {
+    display: inline-block;
+    margin: 16px; }
+
 @media screen and (max-width: 1030px) {
   .page {
     width: 100%; }
@@ -128,7 +155,30 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
     font-weight: 500;
     width: 100%;
-    text-align: center; } 
-}
+    text-align: center; }
+  .footer .footer__nav__item:first-child {
+    margin-left: 8px; }
+  .footer .footer__item_heading {
+    display: block;
+    width: 100%; }
+  .footer .footer__item_nav {
+    padding-right: 0px;
+    width: 100%;
+    text-align: left;
+    display: block; } }
 
-
+@media screen and (max-width: 620px) {
+  .footer__item {
+    display: block;
+    width: 100%; }
+  .footer .footer__item_nav {
+    padding-right: 0px;
+    width: 100%;
+    text-align: center; }
+  .footer .footer__item_heading {
+    padding-left: 0px;
+    font: 2rem "Lora";
+    font-weight: normal;
+    font-weight: 500;
+    width: 100%;
+    text-align: center; } }
