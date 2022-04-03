@@ -72,7 +72,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .header {
   background: #232323;
-  padding: 8px; }
+  padding: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end; }
   .header .header__item {
     display: inline-block;
     color: #f1f1f1; }
@@ -85,11 +91,11 @@ h1, h2, h3, h4, h5, h6 {
     padding-right: 16px;
     width: 79.6%;
     text-align: right; }
-  .header .header__nav {
-    display: inline-block; }
-  .header .header__nav__item {
-    display: inline-block;
-    margin: 16px; }
+    .header .header__item_nav .header__nav {
+      display: inline-block; }
+      .header .header__item_nav .header__nav .header__nav__item {
+        display: inline-block;
+        margin: 16px; }
 
 .nav .nav__item {
   color: #f1f1f1;
@@ -100,7 +106,7 @@ h1, h2, h3, h4, h5, h6 {
 .content {
   padding: 16px; }
   .content .nav__chapter {
-    background: #113353;
+    background: #333353;
     padding: 8px;
     margin-bottom: 16px; }
     .content .nav__chapter .nav_chapter__heading {
@@ -142,36 +148,38 @@ h1, h2, h3, h4, h5, h6 {
     font: 1.3rem "Lora";
     font-weight: 500;
     width: 20%; }
-  .footer .footer__item_nav {
-    padding-right: 16px;
-    width: 79.6%;
-    text-align: right; }
   .footer .footer__nav {
     display: inline-block; }
   .footer .footer__nav__item {
     display: inline-block;
     margin: 16px; }
+    .footer .footer__nav__item .footer__item_nav {
+      padding-right: 16px;
+      width: 79.6%;
+      text-align: right; }
 
 @media screen and (max-width: 1030px) {
   .page {
     width: 100%; }
-  .header__item {
-    display: block;
-    width: 100%; }
-  .header .header__item_nav {
-    padding-right: 0px;
-    width: 100%;
+  .header {
+    display: block; }
+    .header .header__item_nav {
+      padding-right: 0;
+      width: 100%;
+      text-align: center; }
+    .header .header__item {
+      display: block; }
+    .header .header__item_heading {
+      padding-left: 0px;
+      font: 2rem "Lora";
+      font-weight: 500;
+      width: 100%;
+      text-align: center; }
+  .nav__chapter .nav_chapter__heading .nav_chapter__item {
     text-align: center; }
-  .header .header__item_heading {
-    padding-left: 0px;
-    font: 2rem "Lora";
-    font-weight: normal;
-    font-weight: 500;
-    width: 100%;
+  .content .nav__chapter .nav_chapter__item {
     text-align: center; }
-  .nav__chapter p {
-    text-align: center; }
-  .nav__chapter .nav_chapter__item {
+  .content .nav__chapter .nav_chapter__heading {
     text-align: center; }
   .article__heading {
     font: 1rem "Lora";
@@ -183,20 +191,13 @@ h1, h2, h3, h4, h5, h6 {
   .article__date {
     width: 94%;
     text-align: center;
-    margin-left: 2%; }
-  .article__date {
+    margin-left: 2%;
     padding: 16px; }
   .content .section .article .article__content .article__content_text {
     margin: 2%; }
   .footer .footer__nav__item:first-child {
     margin-left: 8px; }
-  .footer .footer__item_heading {
-    display: block;
-    width: 100%; }
   .footer .footer__item_nav {
-    padding-right: 0px;
-    width: 100%;
-    text-align: left;
     display: block; } }
 
 @media screen and (max-width: 620px) {
