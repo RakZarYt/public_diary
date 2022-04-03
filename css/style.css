@@ -99,6 +99,18 @@ h1, h2, h3, h4, h5, h6 {
 
 .content {
   padding: 16px; }
+  .content .nav__chapter {
+    background: #113353;
+    padding: 8px;
+    margin-bottom: 16px; }
+    .content .nav__chapter .nav_chapter__heading {
+      font: 1.35em "Lora";
+      color: #f1f1f1;
+      margin-bottom: 6px; }
+    .content .nav__chapter .nav_chapter__item {
+      display: block; }
+      .content .nav__chapter .nav_chapter__item:hover {
+        color: #eeaa22; }
   .content .section .article {
     margin: 8px 0; }
     .content .section .article .article__heading {
@@ -157,6 +169,10 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 500;
     width: 100%;
     text-align: center; }
+  .nav__chapter p {
+    text-align: center; }
+  .nav__chapter .nav_chapter__item {
+    text-align: center; }
   .article__heading {
     font: 1rem "Lora";
     weight: 500;
@@ -168,6 +184,8 @@ h1, h2, h3, h4, h5, h6 {
     width: 94%;
     text-align: center;
     margin-left: 2%; }
+  .article__date {
+    padding: 16px; }
   .content .section .article .article__content .article__content_text {
     margin: 2%; }
   .footer .footer__nav__item:first-child {
